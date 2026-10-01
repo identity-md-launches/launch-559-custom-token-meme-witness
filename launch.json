@@ -1,0 +1,20 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "ALIBI",
+    "name": "Meme Witness Protection",
+    "symbol": "ALIBI",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0x0000000000000000000000000000000000000000",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "792281625142643375935439503360000"
+  },
+  "economics": {"poolBps":8000,"initialMarketCapWei":"10000000000000000000","remainderTo":"0x824932206b216977e3a94094a9d6ecfc6851f0c8"},
+  "notes": "ALIBI in src/ALIBI.sol has a no-argument constructor that mints exactly 1,000,000,000 tokens with 18 decimals to msg.sender once. Transfers have no token fee. There are no application contracts or initialization calls. The native ETH pool uses a 0.3% swap fee and tick spacing 60. With native ETH as currency0 and ALIBI as currency1, the provenance sqrtPriceX96 is sqrt(1000000000000000000000000000 / 10000000000000000000) * 2^96. The deployer derives the opening price from economics.initialMarketCapWei and token.totalSupply."
+}
